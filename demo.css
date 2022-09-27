@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 100px auto;
+    position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel_list {
+    display: flex;
+    transition: all .4s ease;
+    position: relative;
+    width: 100%;
+}
+
+.carousel_item {
+    width: 100%;
+    height: 300px;
+    flex: 1 0 100%;
+    transition: transform .5s ease;
+}
+
+
+
+.dots_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    top: -30px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.dosts_item {
+    border: 1px solid black;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin: 0 10px;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.01);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    display: inline-block;
+    padding: 8px 18px;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+}
+
+.prev {
+    top: 22%;
+    left: -10%;
+}
+
+.next {
+    top: 22%;
+    right: -10%;
+}
